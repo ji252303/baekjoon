@@ -13,4 +13,4 @@ if(B + C >= 60):
 else:
   if(A >= 24):
     A = A - 24
-  print(A, B+C)
+  print(A, B+C) 
