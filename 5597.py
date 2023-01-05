@@ -5,4 +5,4 @@ for i in range(28) :
     alist.remove(num)
 
 print(min(alist))
-print(max(alist))
+print(max(alist)) 
