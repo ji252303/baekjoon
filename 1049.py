@@ -26,3 +26,4 @@ while n > 0:
         result += min_pack
 
 print(result)
+ 
