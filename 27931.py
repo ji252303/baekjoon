@@ -69,7 +69,7 @@ print(min_even, min_odd)
 
 
 
-다른사람 참고코드 (공부필요)
+
 
 import sys
 input = sys.stdin.readline
