@@ -33,8 +33,6 @@ else:
 n = int(input())
 coords = list(map(int, input().split()))
 
-coords = sorted(map(abs, coords))
-
 coords.sort() # 좌표값을 오름차순으로 정렬
 
 min_even = float('inf') # 짝수 거리의 최솟값
@@ -43,14 +41,12 @@ min_odd = float('inf') # 홀수 거리의 최솟값
 left = 0 # 왼쪽 포인터
 right = 1 # 오른쪽 포인터
 
-while left < n-1 and right < n:
+while left < n-1 and right <= n:
     dist = coords[right] - coords[left] # 두 점 사이의 거리
     if dist % 2 == 0:
         min_even = min(min_even, dist) # 짝수 거리의 최솟값 업데이트
     else:
         min_odd = min(min_odd, dist) # 홀수 거리의 최솟값 업데이트
-    if min_odd == 1: # 최소 홀수 거리가 1이면 더 이상 탐색하지 않고 종료
-        break
     if right == n-1: # 오른쪽 포인터가 마지막 값까지 갔으면 왼쪽 포인터 증가
         left += 1
     else:
