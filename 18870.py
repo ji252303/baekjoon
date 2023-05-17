@@ -10,3 +10,5 @@ for i in range(len(ar)):
 
 for i in num:
     print(dic[i],end=' ')
+
+    
