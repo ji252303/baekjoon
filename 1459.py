@@ -19,3 +19,5 @@ else:
     else:
         answer += xy * w
     print(answer)
+
+    
