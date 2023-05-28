@@ -32,6 +32,7 @@ def calculate_expression(expression):
     else:
         A = int(A, 8)
 
+        
     print(A)
     print(B)
     # 피연산자 B를 8진수로 변환
