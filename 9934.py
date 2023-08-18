@@ -16,3 +16,4 @@ ans = [[] for _ in range(Level)]
 sol(0, l - 1, 0)
 for a in ans:
     print(*a)
+
